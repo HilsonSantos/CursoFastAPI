@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4123ceae-8f3d-4fa4-97a7-85ff52d251a3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../ETL/scriptssql/carga_clientes.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ETL/scriptssql/carga_metas.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ETL/scriptssql/carga_produtos.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ETL/scriptssql/carga_vendedores.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ETL/scriptssql/postgresql/CargaVendas" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ETL/scriptssql/sqlserver/carga_vendas.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FastAPI/api-hosantos/app/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ETL/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ETL/.idea/ETL.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../FastAPI/api-ccm/.idea/Aplicativo_de_Clínicas_e_Consultorios_Medico.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ETL/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ETL/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ETL/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ETL/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ETL/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ETL/dados-excel/BaseDados.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ETL/dados-excel/BaseFuncionarios.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../ETL/dados-excel/Base Funcionarios.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ETL/dados-excel/Cadastro Clientes.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ETL/dados-excel/Cadastro Localidades.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ETL/dados-excel/Cadastro Lojas.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ETL/dados-excel/Cadastro Produtos.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../ETL/dados-excel/Base Produtos.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ETL/dados-excel/DRE 2019.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ETL/dados-excel/EstoqueMin.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ETL/dados-excel/Produção.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ETL/dados-excel/xlsx/1.Dados.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ETL/dados-excel/xlsx/2.Dados.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ETL/dados-excel/xlsx/BaseIncremento.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ETL/dados-excel/xlsx/Categorias.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ETL/dados-excel/xlsx/Clientes.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ETL/dados-excel/xlsx/DetalhesPedidos.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ETL/dados-excel/xlsx/Enderecos de Clientes igor.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ETL/dados-excel/xlsx/Fornecedores.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ETL/dados-excel/xlsx/FuncionariosEscritorios.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ETL/dados-excel/xlsx/FuncionariosNovos.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ETL/dados-excel/xlsx/Incremental Exclusao.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ETL/dados-excel/xlsx/Incremental.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ETL/dados-excel/xlsx/Info.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ETL/dados-excel/xlsx/Metas de Vendas.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ETL/dados-excel/xlsx/Orcamento.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ETL/dados-excel/xlsx/Pedidos.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ETL/dados-excel/xlsx/Produtos.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ETL/dados-excel/xlsx/Produtos1.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ETL/dados-excel/xlsx/Produtos2.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ETL/dados-excel/xlsx/Produtos3.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ETL/dados-excel/xlsx/Receita de Bolo.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ETL/dados-excel/xlsx/Transportadoras.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ETL/dados-excel/xlsx/Vendedores.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ETL/dados-excel/xlsx/enderecoCliente.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ETL/dbconnection/postgresql.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ETL/dbconnection/postgresql.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ETL/dbconnection/sqlserver.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ETL/dbconnection/sqlserver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ETL/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ETL/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ETL/scriptssql/createtable.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3DVKC9T2ZbrrIYfgtRt9GQIjhPh" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Meus-Projetos/Projetos-Python/CursoFastAPI&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode&quot;
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-024ed6589d45-c2ffad84badb-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-261.23567.174" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4123ceae-8f3d-4fa4-97a7-85ff52d251a3" name="Changes" comment="" />
+      <created>1778361668137</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1778361668137</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

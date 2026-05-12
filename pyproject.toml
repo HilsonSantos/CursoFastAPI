@@ -1,0 +1,72 @@
+[project]
+name = "cursofastapi"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Hilson Santos",email = "hosantos@hotmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13,<4.0"
+dependencies = [
+    "fastapi[standard] (>=0.136.1,<0.137.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "ruff (>=0.15.12,<0.16.0)",
+    "pytest (>=9.0.3,<10.0.0)",
+    "taskipy (>=1.14.1,<2.0.0)",
+    "pytest-cov (>=7.1.0,<8.0.0)"
+]
+
+[tool.ruff]
+line-length = 79 # Define o limite máximo de caracteres por linha (segue padrão
+                 # PEP 8)
+extend-exclude = ["migrations"] # Ignora a pasta migrations (normalmente gerada
+                                # automaticamente por ORMs como Django)
+
+# CONFIGURAÇÃO GLOBAL #
+# Configura as regras de linting
+[tool.ruff.lint]
+preview = true
+select = [  # Diz quais conjuntos de verificações aplicar
+    "I",    # Ordenação de imports em ordem alfabética
+    "F",    # Procura por alguns erros em relação a boas práticas de código
+    "E",    # Erros de estilo de código
+    "W",    # Avisos sobre estilo de código
+    "PL",   # "Erros" em relação a boas práticas de código
+    "PT"    # Boas práticas do Pytest
+]
+
+# Configura o formatador do Ruff
+[tool.ruff.format]
+preview = true
+quote-style = "double" # Define aspas padrão, nesse caso "aspas duplas"
+
+[tool.pytest.ini_options]
+pythonpath = "."
+addopts = "-p no:warnings"
+
+# Define comandos automatizados com Taskipy, permitindo rodar tarefas
+# Observação: para executar coloque o task na frente do comando.
+[tool.taskipy.tasks]
+# Faz a checagem de boas práticas do código python
+lint = "ruff check"
+# Faz algumas correções de boas práticas automaticamente
+pre_format  = "ruff check --fix"
+# Executa a formatação do código em relação às convenções de estilo de código
+format = "ruff format"
+# Executa o servidor de desenvolvimento do FastAPI
+run = "fastapi dev app/main.py --reload"
+# Executa a camada de lint antes de executar os testes
+pre_test = "task lint"
+# Executa os testes com pytest de forma verbosa (-vv) e adiciona nosso código
+# com base de cobertura
+test = "pytest -s -x --cov=app -vv"
+# Gera um report de cobertura após os testes
+post_test = "coverage html"
