@@ -1,14 +1,9 @@
 from http import HTTPStatus
 
-from fastapi.testclient import TestClient
 
-from app.main import app
-
-
-def test_app():
+def test_app(client):
     # Cria um cliente de testes usando a aplicação como base
     # Arrange -> Organizar
-    client = TestClient(app)
 
     # Faz uma requisição
     # Act -> Agir
@@ -23,3 +18,39 @@ def test_app():
     # quando faz a requisição.
     # Assert -> Afirmar
     assert response.json() == {"message": "Olá Mundo!"}
+
+
+def test_create_user(client):
+    dados_json = {
+        "username": "HILSON DE OLIVEIRA SANTOS",
+        "email": "hosantos@exemple.com",
+        "password": "111424",
+    }
+    response = client.post("/api/v1/users/", json=dados_json)
+    assert response.status_code == HTTPStatus.CREATED
+    # assert response.json() == dados_json
+    print(response.json())
+
+
+def test_list_users(client):
+    response = client.get("/api/v1/users/")
+    assert response.status_code == HTTPStatus.OK
+    print(response.json())
+
+
+def test_update_user(client):
+    dados_json = {
+        "username": "HILSON DE OLIVEIRA SANTOS",
+        "email": "hsantos@exemple.com",
+        "password": "147528",
+    }
+    response = client.put("/api/v1/users/1", json=dados_json)
+    assert response.status_code == HTTPStatus.OK
+    # assert response.json() == dados_json
+    print(response.json())
+
+
+def test_delete_user(client):
+    response = client.delete("/api/v1/users/1")
+    assert response.status_code == HTTPStatus.OK
+    print(response.json())
